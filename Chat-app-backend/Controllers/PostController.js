@@ -91,7 +91,7 @@ const GetTimelinePost=async(req,res)=>{
                     from:"posts",
                     localField:"following",
                     foreignField:"userId",
-                    as:"followingPosts"
+                    as:"followingposts"
                 } 
             },{
                 $project:{
@@ -100,7 +100,11 @@ const GetTimelinePost=async(req,res)=>{
                 }
             }
         ])  
-        res.status(200).json(currentUserPosts.concat(followingposts))
+        res.status(200).json(currentUserPosts.concat(...followingposts[0].followingposts)
+        .sort((a,b)=>{
+            return b.createdAt-a.createdAt
+        })
+        )
     } catch (error) {
         res.status(500).json(error.message)
     }
