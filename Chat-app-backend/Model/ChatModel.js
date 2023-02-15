@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 const ChatSchema=mongoose.Schema({
-    members:{Array},
+    members:{type:Array},
 },{
     timestamps:true
 })

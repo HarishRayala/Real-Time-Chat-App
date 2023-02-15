@@ -10,6 +10,7 @@ const connection = require("./config/db");
 const { UsersModel } = require("./Model/UserModel");
 const { UserRoute } = require("./Routes/UserRoute");
 const { PostRouter } = require("./Routes/PostRoute");
+const { MessageRouter } = require("./Routes/MessageRoute");
 require("dotenv").config();
 const app=express();
 app.use(express.json());
@@ -73,6 +74,8 @@ app.use("/chat",chatRoute)
 app.use("/user",UserRoute)
 
 app.use("/post",PostRouter)
+
+app.use("/message",MessageRouter)
 
 app.listen(8000,async()=>{
     try{
