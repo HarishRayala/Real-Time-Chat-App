@@ -1,0 +1,14 @@
+.App{
+    overflow: hidden;
+    color: #1c2938;
+    background-color: #fafbfc;
+    padding: 1rem 1rem;
+}
+.blur{
+    position: absolute;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: #89ccf8 ;
+    filter: blur(72px);
+}
