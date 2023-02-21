@@ -11,7 +11,7 @@ const ProfileCard = () => {
         <img src={profileimage} alt="profileimage" />
       </div>
       <div className="profilename">
-        <span>Divya</span>
+        <span>Diya</span>
         <span>Full stack Web Developer</span>
       </div>
       <div className="followstatus">
@@ -29,6 +29,9 @@ const ProfileCard = () => {
         </div>
         <hr />
       </div>
+      <span>
+        MyProfile
+      </span>
     </div>
   );
 };

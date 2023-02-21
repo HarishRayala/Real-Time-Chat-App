@@ -1,0 +1,43 @@
+.postshare{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.postshare>img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.postshare>div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+.postshare>div>input{
+    background-color: #d6e2ec;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.postoptions{
+    display: flex;
+    justify-content: space-around;
+}
+.option{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.option:hover{
+    cursor: pointer;
+}
