@@ -3,6 +3,7 @@ import "./PostShare.css";
 import profileimg from "../../img/profileImg.jpg";
 import { GrGallery, GrLocation, GrSchedule } from "react-icons/gr";
 import { AiOutlinePlayCircle } from "react-icons/ai";
+import {MdOutlineCancel} from "react-icons/md"
 import {Button} from "@chakra-ui/react"
 
 const PostShare = () => {
@@ -56,7 +57,8 @@ const PostShare = () => {
       {
         image && (
             <div className="previewimage">
-
+                <MdOutlineCancel onClick={()=>setImage(null)}/>
+                <img src={image.image} alt="" />
             </div>
         )
       }

@@ -1,0 +1,17 @@
+.rightside{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.navicons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navicons>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.navicons>svg{
+    height: 1.5rem;
+}
