@@ -1,0 +1,25 @@
+.infocard{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 10px;
+}
+.infohead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infohead>h4{
+    font-weight: bold;
+}
+.infohead>div:hover{
+    cursor: pointer;
+}
+.infocard>Button{
+    margin-top: 6rem;
+    align-self: flex-end;
+}

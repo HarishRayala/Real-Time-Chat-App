@@ -1,0 +1,34 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+.auth>div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.a-left{
+    gap: 2rem;
+}
+.a-left>img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.webname>h1{
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffc008;
+}
+.webname>h6{
+    font-size: 16px;
+}
+.auth>h1{
+    font-size: 28px;
+    font-weight: 700;
+}

@@ -80,7 +80,7 @@ const GetTimelinePost=async(req,res)=>{
         const currentUserPosts=await PostModel.find({userId:userId})
         //aggregation is array of steps 1. matching step
         // 2. look up is like when we have to match the doc in from one model to another model
-        // 3. project is return type of aggregation
+        // 3. project is to filter out the fields in object.
         const followingposts=await UsersModel.aggregate([
             {
                 $match:{

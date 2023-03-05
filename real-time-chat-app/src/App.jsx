@@ -5,6 +5,7 @@ import { Signup } from './Pages/Signup'
 import {Routes,Route} from "react-router-dom"
 import Home from './Pages/Home/Home'
 import Profile from './Pages/Profile/Profile'
+import Auth from './Pages/Auth/Auth'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +15,9 @@ function App() {
      {/* <Signup/> */}
      <div className='blur' style={{top:"-18%", right:"0"}}></div>
      <div className='blur' style={{top:"36%", left:"-8rem"}}></div>
-     <Home/>
+     {/* <Home/> */}
      {/* <Profile/> */}
+     <Auth/>
      <Routes>
         <Route path="/chat" element={<Chat/>} />
      </Routes>
